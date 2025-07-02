@@ -1,0 +1,5 @@
+./OpenAI_Key_portfolio-fastapi-local-20250702.txt
+./apikey.txt
+venv/
+__pycache__/
+*.pyc
