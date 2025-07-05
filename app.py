@@ -15,7 +15,7 @@ api_key = os.getenv("OPENAI_API_KEY") or None
 if not api_key:
     # ローカル用ファイル読み込み（fallback）
     try:
-        with open("apikey.txt", "r") as f:
+        with open("../apikey.txt", "r") as f:
             api_key = f.read().strip()
     except FileNotFoundError:
         raise Exception("OpenAI APIキーが設定されていません。")
