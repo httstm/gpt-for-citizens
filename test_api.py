@@ -9,7 +9,7 @@ user_input = st.text_input("質問を入力してください:")
 if st.button("送信"):
     if user_input:
         # FastAPIサーバーへのPOSTリクエスト
-        url = "https://gpt-for-citizens.onrender.com/"
+        url = "https://gpt-for-citizens.onrender.com/gpt"
         # url = "https://34a3-240f-37-3ba0-1-6983-2b32-7aca-ff3f.ngrok-free.app/gpt"
         # url = "http://127.0.0.1:8000/gpt"  # エンドポイント
 
