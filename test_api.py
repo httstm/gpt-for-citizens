@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
 
-st.title("行政受付AIデモ｜市民質問受付サンプル")
+st.markdown(
+    "<h1 style='font-size:xx-large'>行政受付AIデモ｜市民質問受付サンプル</h1>",
+    unsafe_allow_html=True
+    )
+
 st.caption("このデモは FastAPI + Streamlit + Render による行政受付AIサンプルアプリです。")
 
 
@@ -31,3 +35,5 @@ if st.button("送信"):
             st.write("エラーが発生しました。")
     else:
         st.write("質問を入力してください。")
+
+st.info("⚠️ 初回アクセス時、APIサーバー（Render無料プラン）がスリープから起動するため、応答に30秒以上かかる場合があります。")
