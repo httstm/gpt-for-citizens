@@ -6,7 +6,10 @@ st.caption("このデモは FastAPI + Streamlit + Render による行政受付AI
 
 
 # ユーザー入力
-user_input = st.text_input("質問を入力してください:")
+user_input = st.text_input(
+    "質問を入力してください:",
+    placeholder="例: 不燃ごみの日はいつですか？"
+)
 
 
 if st.button("送信"):
