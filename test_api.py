@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 
 st.title("行政受付AIデモ｜市民質問受付サンプル")
+st.caption("このデモは FastAPI + Streamlit + Render による行政受付AIサンプルアプリです。")
+
 
 # ユーザー入力
 user_input = st.text_input("質問を入力してください:")
