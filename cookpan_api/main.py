@@ -13,7 +13,7 @@ app = FastAPI(
     version="0.1.0",
     servers=[
         {
-            "url": "https://clutch-eggnog-overarch.ngrok-free.dev"
+            "url": "https://cookpan-api.onrender.com"
         }
     ],
 )
